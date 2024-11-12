@@ -43,7 +43,7 @@ public class VnPayLibrary
 
         return new PaymentResponseModel()
         {
-            Success = true,
+            Success = vnpResponseCode.Equals("00"),
             PaymentMethod = "VnPay",
             OrderDescription = orderInfo,
             OrderId = orderId.ToString(),
